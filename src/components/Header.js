@@ -1,0 +1,16 @@
+import Link from 'next/link';
+
+export default function Header() {
+  return (
+    <header style={{ padding: '20px 0', marginBottom: '40px', borderBottom: '1px solid #eee' }}>
+      <nav style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 'bold', textDecoration: 'none', color: 'black' }}>
+          My Blog
+        </Link>
+        <Link href="/write" style={{ textDecoration: 'none', color: '#666' }}>
+          Write
+        </Link>
+      </nav>
+    </header>
+  );
+}
